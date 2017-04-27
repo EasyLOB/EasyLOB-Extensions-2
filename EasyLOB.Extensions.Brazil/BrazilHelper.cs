@@ -113,7 +113,7 @@ namespace EasyLOB.Extensions.Brazil
             return System.Text.RegularExpressions.Regex.IsMatch(cep, ("[0-9]{5}-[0-9]{3}"));
         }
 
-        public static bool IsEmail(string email)
+        public static bool IsEMail(string email)
         {
             return System.Text.RegularExpressions.Regex.IsMatch(email, ("(?<user>[^@]+)@(?<host>.+)"));
         }
