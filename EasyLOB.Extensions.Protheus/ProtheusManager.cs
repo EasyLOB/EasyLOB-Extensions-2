@@ -3,20 +3,36 @@ using EasyLOB.Library;
 using System;
 
 /*
+
 "Executar como Administrador"
 
 CD \Protheus\API
-COPY apconn.dll C:\Windows\System32
-COPY apconnxcontrol.ocx C:\Windows\System32
-COPY apconn.dll C:\Windows\SysWOW64
-COPY apconnxcontrol.ocx C:\Windows\SysWOW64
+COPY apconn.dll %systemroot%\SysWoW64
+COPY apconnxcontrol.ocx %systemroot%\SysWoW64
 
-CD C:\Windows\SysWOW64
-REGSVR32 apconnxcontrol.ocx
+CD %systemroot%\SysWoW64
+%systemroot%\SysWoW64\REGSVR32 apconnxcontrol.ocx
 
-Properties
-    Debugging
-         Enable native code debugging
+----------
+
+If the DLL is 32 bit:
+
+Copy the DLL to C:\Windows\SysWoW64\
+In an elevated command prompt: %windir%\SysWoW64\regsvr32.exe %windir%\SysWoW64\namedll.dll
+
+If the DLL is 64 bit:
+
+Copy the DLL to C:\Windows\System32\
+In an elevated command prompt: %windir%\System32\regsvr32.exe %windir%\System32\namedll.dll
+
+I know it seems the wrong way round, but that's the way it works.
+
+How to use the Regsvr32 tool and troubleshoot Regsvr32 error messages
+http://support.microsoft.com/kb/249873 
+"Note On a 64-bit version of a Windows operating system, there are two versions of the Regsv32.exe file:
+The 64-bit version is %systemroot%\System32\regsvr32.exe
+The 32-bit version is %systemroot%\SysWoW64\regsvr32.exe
+
  */
 
 namespace EasyLOB.Extensions.Protheus
