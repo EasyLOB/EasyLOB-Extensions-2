@@ -1,10 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyLOB.Extensions.Protheus", "EasyLOB.Extensions.Protheus\EasyLOB.Extensions.Protheus.csproj", "{A8570D37-8ACC-492B-B1F3-067B7BBC872A}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Z - EasyLOB Core", "Z - EasyLOB Core", "{59D56874-5477-4A6F-AEB3-C0DE149134B6}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{87E18183-09BC-4B9F-9358-E885DEB547D4}"
@@ -23,10 +21,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{A8570D37-8ACC-492B-B1F3-067B7BBC872A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A8570D37-8ACC-492B-B1F3-067B7BBC872A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A8570D37-8ACC-492B-B1F3-067B7BBC872A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A8570D37-8ACC-492B-B1F3-067B7BBC872A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{55B7716B-36A3-442D-9E9E-9CAAB7DB592E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{55B7716B-36A3-442D-9E9E-9CAAB7DB592E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55B7716B-36A3-442D-9E9E-9CAAB7DB592E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -44,7 +38,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{A8570D37-8ACC-492B-B1F3-067B7BBC872A} = {D0054B0B-B43A-4ED1-8F8D-5436ADC77931}
 		{87E18183-09BC-4B9F-9358-E885DEB547D4} = {59D56874-5477-4A6F-AEB3-C0DE149134B6}
 		{55B7716B-36A3-442D-9E9E-9CAAB7DB592E} = {87E18183-09BC-4B9F-9358-E885DEB547D4}
 		{D0054B0B-B43A-4ED1-8F8D-5436ADC77931} = {59D56874-5477-4A6F-AEB3-C0DE149134B6}
